@@ -51,11 +51,11 @@ CREATE TABLE Shippers (
     Phone VARCHAR(20)
 );
 
--- Insert sample data
+
 INSERT INTO Customers (CustomerID, CustomerName, ContactName, Country) VALUES
 (1, 'Alfreds Futterkiste', 'Maria Anders', 'Germany'),
 (2, 'Ana Trujillo Emparedados y helados', 'Ana Trujillo', 'Mexico'),
-(3, 'Antonio Moreno Taquería', 'Antonio Moreno', 'Mexico');
+(3, 'Antonio Moreno TaquerÃ­a', 'Antonio Moreno', 'Mexico');
 
 INSERT INTO Suppliers (SupplierID, SupplierName, ContactName, Country) VALUES
 (1, 'Exotic Liquids', 'Charlotte Cooper', 'UK'),
@@ -85,13 +85,12 @@ INSERT INTO OrderDetails (OrderDetailID, OrderID, ProductID, Quantity) VALUES
 (2, 2, 2, 20),
 (3, 3, 3, 30);
 
--- List all customers
+
 SELECT * FROM Customers;
 
--- List all orders
+
 SELECT * FROM Orders;
 
--- List all orderdetails
 SELECT * FROM OrderDetails;
 
 -- List all products
